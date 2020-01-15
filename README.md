@@ -1,7 +1,7 @@
 # Getting and Cleaning Data Coursera Project
 Course Project for the Getting and Cleaning Data course in Coursera, from the John Hopkins University specialization in Data Science.
 ------
-The project makes use of the "Human Activity Recognition Using Smartphones Dataset. Version 1.0", from Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio and Luca Oneto.
+The project makes use of the "Human Activity Recognition Using Smartphones Dataset. Version 1.0", from Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio and Luca Oneto.[1]
 The original data set contained:
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -45,3 +45,6 @@ The substitution can be done using the `names()` and the `gsub()` functions. Fir
 In order to do this easily, we use the `group_by()` function, again, from the `dplyr` package, to group by activity and subject, so that when we create another table with summary data, the function applies by activity and subject.
 This table can be used by using the `summarize_all()` function, stating the `mean` function as an argument.
 This final table is saved using the `write.table` command
+
+----
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
